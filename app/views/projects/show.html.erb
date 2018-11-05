@@ -1,0 +1,7 @@
+<h1><%= @project.name %></h1>
+<% @project.images.each do |image| %>
+<%= image_tag image, style: "width:300px;height:300px;" %>
+<% end %>
+<%= @project.caption %>
+
+<%= link_to "edit", edit_project_path(@project) %>

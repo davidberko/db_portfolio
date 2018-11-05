@@ -1,0 +1,11 @@
+
+<%= form_with(model: @project) do |f| %>
+<div id="new_project_form">
+  <%= f.label :name %><br />
+  <%= f.text_field :name %><br />
+  <%= f.file_field :images, multiple: true %><br />
+  <%= f.label :caption %><br />
+  <%= f.text_area :caption %><br />
+  <%= f.submit %>
+</div>
+<% end %>
