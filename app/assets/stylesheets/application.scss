@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Navigation */
+
+#logo {
+  padding-top: 20px;
+  float: left;
+  font-size: 30px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-shadow: 2px 2px #AAA4A3;
+}
+
+nav {
+  height: 100px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: thin;
+}
+
+#nav_container {
+  display: inline-block;
+  ul {
+    float: right;
+    li {
+      list-style-type: none;
+      font-size: 20px;
+      padding-top: 10px;
+      display: inline-block;
+      padding-right: 10px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.project_caption {
+  font-size: 20px;
+}
+#project_container {
+  width: 100%;
+  margin-left: 25%;
+  display: inline-block;
+}
+
+.m_img {
+  margin-bottom: 50px;
+  filter: blur(2px)
+}
+.m_img:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+    width:400px;
+    height: 600px;
+    display:block;
+    z-index:999;
+    filter: blur(0);
+}
+
+.d_img {
+  margin-bottom: 50px;
+  filter: blur(2px)
+}
+.d_img:hover {
+  position:relative;
+  top: 100px;
+  right: 400px;
+    width:900px;
+    height: 600px;
+    display:block;
+    z-index:800;
+    filter: blur(0);
+}
+
+#mobile_image_div {
+  float: left;
+  margin-right: 5%;
+}
+#destop_image_div {
+  float: left;
+}
