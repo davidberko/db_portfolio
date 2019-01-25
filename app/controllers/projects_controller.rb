@@ -33,5 +33,5 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:name, :caption, images: [])
+  params.require(:project).permit(:name, :caption, mobile_images: [], desktop_images: [])
 end
